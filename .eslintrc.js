@@ -23,7 +23,10 @@ module.exports = {
     'generator-star-spacing': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    "semi": [2, "always"],//语句强制分号结尾
-    "no-extra-semi": 1,//多余的分号
+    //
+    //fairy自定义
+    "semi": [1, "always"],//语句强制分号结尾   //如0代码错误不提示、1代表警告提醒但不影响现有编译、2error会抛出错误。
+    "no-extra-semi": 1,//多余的分号    
+    "eqeqeq": [0, "smart"],//在进行比较时，必须使用全等=== 和完全不等!==
   }
 }
