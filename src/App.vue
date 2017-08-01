@@ -1,23 +1,29 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+  <div id="app"  style="border:1px solid gray;padding:10px;">
+    App.vue
+    {
+      <router-link to="home">home</router-link>
+      <router-link :to="{path: 'home' }">home</router-link>
+    }
+    {
+      <router-link to="rx">rx</router-link>
+      <router-link :to="{path: 'rx' }">rx</router-link>
+    }
+    {
+      <router-link to="vuerx">rx</router-link>
+      <router-link :to="{path: 'vuerx' }">vue-rx</router-link>
+    }
+    <br/>
+    <br/>
+    <div style="border:1px solid gray;padding:10px;">
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+    </div>
   </div>
 </template>
-
 <script>
 export default {
   name: 'app'
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
