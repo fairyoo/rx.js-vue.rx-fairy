@@ -10,7 +10,7 @@
       <router-link :to="{path: 'rx' }">rx</router-link>
     }
     {
-      <router-link to="vuerx">rx</router-link>
+      <router-link to="vuerx">vue-rx</router-link>
       <router-link :to="{path: 'vuerx' }">vue-rx</router-link>
     }
     <br/>
