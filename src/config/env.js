@@ -19,3 +19,6 @@ export {
 // export default async () => {
 // };
 
+// export default async (url='', data = {}, type = 'GET', method = 'fetch') => {
+// };
+
