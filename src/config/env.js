@@ -1,5 +1,6 @@
-let fairyMainApiUrl = 'http://api.fairy.market';
-let fairyUserApiUrl = fairyMainApiUrl;
+const fairyApiBaseUrl = 'http://api.fairy.market/v1';
+const fairyUserApiUrl = fairyApiBaseUrl + '/user';
+const fairyCityApiUrl = fairyApiBaseUrl + '/city';
 
 if (process.env.NODE_ENV == '') {
 
@@ -7,8 +8,9 @@ if (process.env.NODE_ENV == '') {
 }
 
 export {
-    fairyMainApiUrl,
-    fairyUserApiUrl
+    fairyApiBaseUrl,
+    fairyUserApiUrl,
+    fairyCityApiUrl
 };
 
 // export default{
