@@ -1,20 +1,20 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-const home = r => require.ensure([], () => r(require('../pages/home')), 'home');
+const home = r => require.ensure([], () => r(require('../page/home')), 'home');
 //
-const rx = r => require.ensure([], () => r(require('../pages/rx')), 'rx');
-const refCount = r => require.ensure([], () => r(require('../pages/rx/refCount')), 'refCount');
-const contact = r => require.ensure([], () => r(require('../pages/rx/contact')), 'contact');
-const behaviorSubject = r => require.ensure([], () => r(require('../pages/rx/behaviorSubject')), 'behaviorSubject');
-const copy = r => require.ensure([], () => r(require('../pages/rx/copy')), 'copy');
-const replaySubject = r => require.ensure([], () => r(require('../pages/rx/replaySubject')), 'replaySubject');
-const asyncSubject = r => require.ensure([], () => r(require('../pages/rx/asyncSubject')), 'asyncSubject');
-const scheduler = r => require.ensure([], () => r(require('../pages/rx/scheduler')), 'scheduler');
-const operator6 = r => require.ensure([], () => r(require('../pages/rx/operator6')), 'operator6');
+const rx = r => require.ensure([], () => r(require('../page/rx')), 'rx');
+const refCount = r => require.ensure([], () => r(require('../page/rx/refCount')), 'refCount');
+const contact = r => require.ensure([], () => r(require('../page/rx/contact')), 'contact');
+const behaviorSubject = r => require.ensure([], () => r(require('../page/rx/behaviorSubject')), 'behaviorSubject');
+const copy = r => require.ensure([], () => r(require('../page/rx/copy')), 'copy');
+const replaySubject = r => require.ensure([], () => r(require('../page/rx/replaySubject')), 'replaySubject');
+const asyncSubject = r => require.ensure([], () => r(require('../page/rx/asyncSubject')), 'asyncSubject');
+const scheduler = r => require.ensure([], () => r(require('../page/rx/scheduler')), 'scheduler');
+const operator6 = r => require.ensure([], () => r(require('../page/rx/operator6')), 'operator6');
 //
-const vuerx$ = r => require.ensure([], () => r(require('../pages/vuerx')), 'vuerx');
-const github = r => require.ensure([], () => r(require('../pages/vuerx/github')), 'github');
+const vuerx$ = r => require.ensure([], () => r(require('../page/vuerx')), 'vuerx');
+const github = r => require.ensure([], () => r(require('../page/vuerx/github')), 'github');
 
 Vue.use(Router);
 
