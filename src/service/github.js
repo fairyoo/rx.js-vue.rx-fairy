@@ -12,4 +12,5 @@ const get = (url, config) => Observable
   .map((resp) => resp.data)
   .catch((err) => Observable.throw(err.response.data));
 
+// https://api.github.com/search/repositories?q=ff&sort=stars&page=1
 export const search = (q, page) => get('/search/repositories', { params: { q, sort: 'stars', page } });
