@@ -1,7 +1,7 @@
 <template>
   <div class="vue-rx">
     app/vue-rx
-    <router-link to="vuerx/github">github</router-link>
+    <router-link to="vuerx/cn/github">github</router-link>
     <br/><br/>
     
     <div style="border:1px solid gray;padding:10px;">

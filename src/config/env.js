@@ -2,6 +2,8 @@ const fairyApiBaseUrl = 'http://api.fairy.market/v1';
 const fairyUserApiUrl = fairyApiBaseUrl + '/user';
 const fairyCityApiUrl = fairyApiBaseUrl + '/city';
 
+const superApiBaseUrl = 'http://superapi.chidaoni.com';
+
 if (process.env.NODE_ENV == '') {
 
 } else if (process.env.NODE_ENV == 'production') {
@@ -10,7 +12,9 @@ if (process.env.NODE_ENV == '') {
 export {
     fairyApiBaseUrl,
     fairyUserApiUrl,
-    fairyCityApiUrl
+    fairyCityApiUrl,
+
+    superApiBaseUrl
 };
 
 // export default{

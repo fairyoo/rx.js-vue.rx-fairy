@@ -13,6 +13,10 @@
       <router-link to="vuerx">vue-rx</router-link>
       <router-link :to="{path: 'vuerx' }">vue-rx</router-link>
     }
+    {
+      <router-link to="es">es</router-link>
+      <router-link :to="{path: 'es' }">es</router-link>
+    }
     <br/>
     <br/>
     <div style="border:1px solid gray;padding:10px;">
